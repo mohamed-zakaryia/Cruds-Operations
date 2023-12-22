@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui;
+  background-color: #333;
+  height: 800px;
+}
+.allContent {
+  width: 80%;
+  margin: auto;
+}
+.heading {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+.inputs input {
+  width: 100%;
+  height: 35px;
+  border: none;
+  outline: none;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+  transition: 0.3s;
+}
+.inputs input:focus {
+  transform: scale(1.1);
+  background-color: #1a1919;
+}
+.inputs .price input {
+  width: 20%;
+}
+.inputs .price small {
+  background-color: #970606;
+  padding: 5px;
+  border-radius: 4px;
+  color: #fff;
+  width: 100%;
+}
+.inputs .price small::before {
+  content: "total: ";
+}
+button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: blueviolet;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: rgb(110, 12, 202);
+}
+.inputs .searchs {
+  display: flex;
+  justify-content: space-between;
+}
+.inputs .searchs button {
+  width: 45%;
+}
+.outputs table {
+  width: 100%;
+  align-items: center;
+  margin: 5px auto;
+}
+.outputs table thead tr th {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+.outputs table tbody tr td {
+  color: #c9c8c8;
+  text-align: center;
+}
+.outputs table tbody tr td button:hover {
+  background-color: rgb(110, 12, 202);
+  transform: scale(1.1);
+}
